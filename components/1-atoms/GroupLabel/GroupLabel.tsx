@@ -1,10 +1,7 @@
-
 interface Props {
-    label: String;
+  label: String;
 }
-export const GroupLabel = (props:Props) =>{
-    const { label } = props;
-    return(
-        <div> { label }</div>
-    )
-}
+export const GroupLabel = (props: Props) => {
+  const { label } = props;
+  return <div> {label}</div>;
+};

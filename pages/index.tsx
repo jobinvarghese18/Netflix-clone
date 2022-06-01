@@ -1,9 +1,11 @@
-import type, { NextPage } from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 import { Header } from '../components/2-molecules/Header';
 const Home: NextPage = () => {
+  const a = [1, 2, 3, 4];
+  // a.filter((item) => item);
   return (
     <div className={styles.container}>
       <Head>
@@ -12,11 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
+      <Header />
 
-      <main>
-        {/* <Content/> */}
-      </main>
+      <main>{/* <Content/> */}</main>
 
       <footer className={styles.footer}>
         <a
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
