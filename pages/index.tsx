@@ -1,11 +1,10 @@
 import { NextPage } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
+import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Header } from '../components/2-molecules/Header';
+
 const Home: NextPage = () => {
-  const a = [1, 2, 3, 4];
-  // a.filter((item) => item);
   return (
     <div className={styles.container}>
       <Head>
