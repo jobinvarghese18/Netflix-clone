@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     domains: ['upload.wikimedia.org'],
   },
-}
+  swcMinify: false
+};
 
-
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -1,5 +1,5 @@
 interface Props {
-  label: String;
+  label: string;
 }
 export const GroupLabel = (props: Props) => {
   const { label } = props;
