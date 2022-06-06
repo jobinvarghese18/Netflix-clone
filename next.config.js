@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['upload.wikimedia.org'],
+    domains: ['upload.wikimedia.org', 'images.unsplash.com'],
+    loader: 'imgix',
+    path: 'https://upload.wikimedia.org/wikipedia/',
   },
   swcMinify: false
 };
