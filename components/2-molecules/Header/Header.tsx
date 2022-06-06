@@ -1,6 +1,9 @@
 import Img from 'next/image';
 
 export const Header = () => {
+    const myLoader = () => {
+        return `https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg`
+    }
     return (
         <div className="flex flex-row items-center space-x-2 md:space-x-10">
             <div className="">
@@ -10,6 +13,7 @@ export const Header = () => {
                     height={100}
                     className="cursor-pointer object-contain"
                     alt="logo"
+                    loader={myLoader}
                 />
             </div>
 
