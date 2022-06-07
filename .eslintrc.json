@@ -65,6 +65,10 @@
                 "ts": "never",
                 "tsx": "never"
             }
+        ],
+        "semi": [
+            "error",
+            "always"
         ]
     },
     "globals": {
