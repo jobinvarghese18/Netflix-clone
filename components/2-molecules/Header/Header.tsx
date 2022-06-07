@@ -1,5 +1,6 @@
 import Img from 'next/image';
 import { BellIcon, SearchIcon } from '@heroicons/react/solid';
+import { Link } from '../../1-atoms/Link';
 
 export const Header = () => {
     const myLoader = () => {
@@ -31,6 +32,16 @@ export const Header = () => {
                 <p>Kids</p>
                 <BellIcon />
 
+                <Link to='/account'>
+                    <Img
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+                        width={100}
+                        height={100}
+                        className="cursor-pointer object-contain"
+                        alt="logo"
+                        loader={myLoader}
+                    />
+                </Link>
             </div>
         </div>
     );

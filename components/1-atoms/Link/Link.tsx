@@ -1,13 +1,13 @@
-import Link from "next/link";
+import NextLink from "next/link";
 
 interface Props {
-  children: React.ReactNode,
-  to: string
+  children?: React.ReactNode;
+  to: string;
 }
-export const LinkButton: React.FC = (props: Props): JSX.Element => {
-  const { children, to } = props;
+export const Link: React.FC<Props> = (props) => {
+  const { to } = props;
 
   return (
-    <Link href={to}>{children}</Link>
+    <NextLink href={to}>{props?.children}</NextLink>
   );
 };

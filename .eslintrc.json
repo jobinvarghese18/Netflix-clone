@@ -69,7 +69,10 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "react/require-default-props":"off",
+        "react/destructuring-assignment":"off",
+        "react/prop-types":"off"
     },
     "globals": {
          "JSX": true
