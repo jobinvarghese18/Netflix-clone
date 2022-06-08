@@ -2,11 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['upload.wikimedia.org', 'images.unsplash.com'],
-    loader: 'imgix',
-    path: 'https://upload.wikimedia.org/wikipedia/',
+    domains: ['upload.wikimedia.org', 'images.unsplash.com','image.tmdb.org']
   },
-  swcMinify: false
+  swcMinify: false,
+ env:{
+
+ }
 };
 
 module.exports = nextConfig;
+
+    // path: 'https://upload.wikimedia.org/wikipedia/',

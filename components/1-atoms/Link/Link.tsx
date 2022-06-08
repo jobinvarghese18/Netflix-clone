@@ -4,10 +4,11 @@ interface Props {
   children?: React.ReactNode;
   to: string;
 }
+
+
 export const Link: React.FC<Props> = (props) => {
   const { to } = props;
-
   return (
-    <NextLink href={to}>{props?.children}</NextLink>
+    <NextLink href={to} replace><a href={to}>{props?.children}</a></NextLink>
   );
 };

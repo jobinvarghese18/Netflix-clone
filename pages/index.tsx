@@ -1,8 +1,14 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { Banner } from '../components/2-molecules/Banner';
+import { Movie } from '../typings.d';
+import requests from '../api/baseUrl';
 import { Header } from '../components/2-molecules/Header';
 
-const Home: NextPage = () => {
+interface Props {
+  netflixOriginalsResult: Movie[];
+}
+const Home: NextPage = ({ netflixOriginalsResult }: Props) => {
   return (
     <div>
       <Head>
@@ -12,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-
+      <Banner netflixOriginals={netflixOriginalsResult} />
       <main>{/* <Content/> */}</main>
 
       {/* <footer className={styles.footer}>
@@ -32,3 +38,12 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+export const getServerSideProps = async () => {
+  const netflixOriginals = await fetch(requests.fetchNetflixOriginals);
+  const netflixOriginalsResult = await netflixOriginals.json();
+  return {
+    props: {
+      netflixOriginalsResult: netflixOriginalsResult.results,
+    }
+  };
+};
