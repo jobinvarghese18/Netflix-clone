@@ -10,7 +10,7 @@ export const Header = () => {
         return `https://occ-0-1190-2774.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbme8JMz4rEKFJhtzpOKWFJ_6qX-0y5wwWyYvBhWS0VKFLa289dZ5zvRBggmFVWVPL2AAYE8xevD4jjLZjWumNo.png?r=a41`;
     };
     return (
-        <header>
+        <header className='p-0  px-4'>
             <div className="flex items-center space-x-2 md:space-x-10">
                 <Img
                     src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
