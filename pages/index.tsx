@@ -38,7 +38,7 @@ const Home: NextPage = ({ netflixOriginalsResult }: Props) => {
 };
 
 export default Home;
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const netflixOriginals = await fetch(requests.fetchNetflixOriginals);
   const netflixOriginalsResult = await netflixOriginals.json();
   return {

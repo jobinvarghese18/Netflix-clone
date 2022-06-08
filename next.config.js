@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['upload.wikimedia.org', 'images.unsplash.com','image.tmdb.org']
+    domains: ['upload.wikimedia.org', 'images.unsplash.com','image.tmdb.org'],
+    path:'',
+    loader: 'imgix',
   },
   swcMinify: false,
  env:{
